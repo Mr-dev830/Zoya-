@@ -1,8 +1,8 @@
-const secretCode = "1203"
+const secretCode = "1203";
 
 function checkCode(){
 
-let input=document.getElementById("codeInput").value
+let input = document.getElementById("codeInput").value.trim();
 
 if(input===secretCode){
 
