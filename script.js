@@ -1,19 +1,20 @@
-let opened=false
+let opened = false;
 
 function openGift(){
 
-if(opened) return
+if(opened) return;
 
-opened=true
+opened = true;
 
-document.querySelector(".intro").style.display="none"
-document.getElementById("story").style.display="block"
+document.querySelector(".intro").style.display = "none";
 
-document.getElementById("music").play()
+document.getElementById("story").style.display = "block";
 
-startTyping()
+document.getElementById("music").play();
 
-confetti()
+startTyping();
+
+confetti();
 
 }
 
