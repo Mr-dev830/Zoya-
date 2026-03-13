@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html>
+<head>
+
+<meta name="viewport" content="width=device-width, initial-scale=1">
+
+<title>Birthday Surprise ❤️</title>
+
+<link rel="stylesheet" href="style.css">
+
+</head>
+
+<body>
+
+<!-- LOCK SCREEN -->
+
+<div id="lockScreen" class="center">
+
+<h1>🔒 Private Surprise</h1>
+
+<p>Enter the secret code</p>
+
+<input id="codeInput" type="password" placeholder="Secret code">
+
+<button onclick="checkCode()">Unlock</button>
+
+<p id="error"></p>
+
+</div>
+
+
+<!-- MAIN SURPRISE -->
+
+<div id="mainSite" class="hidden">
+
+<h1>Happy Birthday Zoya ❤️</h1>
+
+<div class="gift" onclick="openGift()">🎁</div>
+
+<p id="typing"></p>
+
+<div class="gallery">
+
+<img src="assets/photos/photo1.jpg">
+<img src="assets/photos/photo2.jpg">
+<img src="assets/photos/photo3.jpg">
+
+</div>
+
+</div>
+
+<audio id="music" loop>
+
+<source src="assets/music.mp3" type="audio/mpeg">
+
+</audio>
+
+<script src="script.js"></script>
+
+</body>
+</html>
