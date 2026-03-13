@@ -34,7 +34,9 @@ confetti()
 
 function startTyping(){
 
-let text="You are the most beautiful thing that ever happened to me. Happy Birthday my love ❤️"
+document.getElementById("typing").innerHTML="";
+
+let text="Zoya ❤️ The day you came into my life everything changed. Your smile makes my world brighter. I feel lucky every single day to have you. Happy Birthday my princess 🎂❤️"
 
 let i=0
 
