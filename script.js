@@ -29,6 +29,8 @@ confetti()
 
 }
 
+}
+
 
 function startTyping(){
 
