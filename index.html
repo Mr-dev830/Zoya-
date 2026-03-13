@@ -1,45 +1,64 @@
 <!DOCTYPE html>
-<html>
+<html lang="en">
 <head>
-
-<meta name="viewport" content="width=device-width, initial-scale=1">
-<title>Happy Birthday Zoya ❤️</title>
-
-<link rel="stylesheet" href="style.css">
-
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+  <title>Happy Birthday Zoya ❤️</title>
+  <link rel="preconnect" href="https://fonts.googleapis.com">
+  <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+  <link href="https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&family=Great+Vibes&display=swap" rel="stylesheet">
+  <link rel="stylesheet" href="style.css" />
 </head>
-
 <body>
+  <canvas id="stars"></canvas>
+  <div class="overlay"></div>
 
-<div class="intro">
+  <section class="hero" id="hero">
+    <p class="tag">A little surprise made with love</p>
+    <h1>Happy Birthday <span>Zoya</span> ❤️</h1>
+    <p class="subtitle">Tonight is all about you. Tap the gift and let the story begin.</p>
 
-<h1>Happy Birthday Zoya ❤️</h1>
-<p>Tap the gift to open your surprise</p>
+    <div class="gift-wrap" onclick="openGift()">
+      <div class="gift-box" id="giftBox">
+        <div class="lid"></div>
+        <div class="box"></div>
+        <div class="ribbon-v"></div>
+        <div class="ribbon-h"></div>
+      </div>
+      <p class="tap-text">Tap to open ✨</p>
+    </div>
+  </section>
 
-<div class="gift" onclick="openGift()">🎁</div>
+  <section class="story hidden" id="story">
+    <div class="glass-card">
+      <p class="love-script">For the prettiest soul</p>
+      <h2 id="typing"></h2>
+    </div>
 
-</div>
+    <div class="slideshow-card">
+      <div class="slideshow">
+        <img id="slideImage" src="assets/photos/IMG_20260126_222949_020.jpg" alt="Memory photo">
+      </div>
+      <p class="memory-text">Some moments deserve to stay beautiful forever 💫</p>
+    </div>
 
+    <button class="final-btn" onclick="showFinalMessage()">One more thing 💌</button>
 
-<div id="story" class="hidden">
+    <div class="final-message hidden" id="finalMessage">
+      <div class="glass-card">
+        <h3>You make life softer, warmer, and brighter.</h3>
+        <p>
+          I may not always say everything perfectly, but today I just want you to know
+          that you are deeply special to me. Happy Birthday once again, my love ❤️
+        </p>
+      </div>
+    </div>
+  </section>
 
-<h2 id="typing"></h2>
+  <audio id="music" loop>
+    <source src="assets/music.mp3" type="audio/mpeg">
+  </audio>
 
-<div class="gallery">
-
-<img src="assets/photos/IMG_20260126_222949_020.jpg">
-<img src="assets/photos/IMG_20260301_022917_950.jpg">
-
-</div>
-
-</div>
-
-
-<audio id="music" loop>
-<source src="assets/music.mp3" type="audio/mpeg">
-</audio>
-
-<script src="script.js"></script>
-
+  <script src="script.js"></script>
 </body>
 </html>
